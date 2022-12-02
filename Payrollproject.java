@@ -6,13 +6,13 @@
 package payrollproject;
 
 import static java.lang.System.out;
-import java.util.Scanner;
-import static jdk.nashorn.internal.objects.NativeString.toUpperCase;
+import java.util.*;
 
 
 public class Payrollproject{
     
     public static void main(String[]args){
+        System.out.println("PAYROLL SYSTEM by REX");
         Scanner s = new Scanner(System.in);
     for(int i=0;i<47;i++)
      {
@@ -37,7 +37,7 @@ public class Payrollproject{
         } 
      System.out.print("Enter Employee Name     :");
      String n = s.nextLine();
-     n=toUpperCase(n);
+     n=n.toUpperCase();
      System.out.print("Enter no of working days:");
     int wd =s.nextInt();
     System.out.print("No.of Over Time hours   :");
